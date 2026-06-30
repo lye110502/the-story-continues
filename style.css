@@ -13,9 +13,8 @@ body {
 }
 
 .game {
-  width: 96%;
-  max-width: 700px;
-
+  width: 92%;
+  max-width: 550px;
   background: white;
 
   border-radius: 30px;
@@ -35,11 +34,9 @@ body {
 }
 
 .screen {
-  padding: 32px 24px;
-  min-height: 520px;
+  padding: 24px 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 h1 {
@@ -141,7 +138,7 @@ button:hover {
 
   #scene-image {
     width: 100%;
-    max-height: 190px;
+    max-height: 160px;
     height: auto;
     object-fit: contain;
     border-radius: 16px;
