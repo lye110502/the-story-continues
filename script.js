@@ -45,9 +45,9 @@ const scenes = {
     title: "이준희의 선택",
     text: `2026년 어느 날.
 
-오늘은 예은이와 만날 수 있는 날이다.
+오늘은 날씨가 아~~주 좋은 날이다.
 
-하지만 준희에게는 두 가지 선택지가 있다.`,
+하지만 준희는 축구가 하고 싶은 날이고 두 가지 선택지가 있다.`,
     choices: [
       { text: "⚽ 축구하러 간다", next: "soccer", like: -5 },
       { text: "❤️ 예은이를 만나러 간다", next: "date", like: 15 }
@@ -71,7 +71,7 @@ const scenes = {
   contact: {
     title: "다행이다",
     text: `준희:
-"예은아 나 축구 끝나고 바로 연락할게!"
+"예은아 나 축구 끝나고 바로 갈게!"
 
 예은:
 "웅 재밌게 하구 와ㅎㅎ"
@@ -83,18 +83,18 @@ const scenes = {
   },
 
   late: {
-    title: "위험 신호",
+    title: "비상사태.",
     text: `축구가 끝났다.
 
 휴대폰을 보니 예은이에게서 연락이 와 있었다.
 
 예은:
-"바빴구나..."
+"연락이 없네..."
 
 공기가 차가워졌다.`,
     choices: [
       { text: "미안하다고 전화하기", next: "apology", like: 10 },
-      { text: "ㅋㅋ 왜 삐졌어?", next: "bad", like: -30 }
+      { text: "왜 그래?", next: "bad", like: -30 }
     ]
   },
 
@@ -120,24 +120,25 @@ const scenes = {
 
 지금 가장 중요한 선택은?`,
     choices: [
-      { text: "🍜 밥부터 먹으러 간다", next: "food", like: 20 },
-      { text: "☕ 카페부터 간다", next: "cafe", like: 5 },
-      { text: "🛌 집 가서 쉬자고 한다", next: "restEnd", like: -20 },
-      { text: "🤔 아무거나 먹자고 한다", next: "bad", like: -40 }
+      { text: "🍜 밥부터 먹자", next: "food", like: 20 },
+      { text: "☕ 카페부터 가서 더위 좀 식히자", next: "cafe", like: 5 },
+      { text: "🛌 집 가서 쉬자", next: "restEnd", like: -20 },
+      { text: "🤔 아무거나 먹자", next: "bad", like: -40 }
     ]
   },
 
   food: {
     title: "메뉴 선택",
     text: `예은:
-"뭐 먹을까?"
+"뭐 먹으까?"
 
 이 질문은 쉬워 보이지만
-사실 매우 중요한 보스전이다.`,
+신중하게 골라야할 것 같다!!`,
     choices: [
-      { text: "🍗 치킨", next: "goodFood", like: 15 },
-      { text: "🍜 마라탕", next: "goodFood", like: 20 },
-      { text: "🤷 진짜 아무거나", next: "bad", like: -50 }
+      { text: "🍕 피자", next: "goodFood", like: 15 },
+      { text: "🍜 샤브샤브", next: "goodFood", like: 20 },
+      { text: "🍜 쿠우쿠우", next: "goodFood", like: 20 },
+      { text: "🤷 아무거나", next: "bad", like: -50 }
     ]
   },
 
@@ -149,7 +150,7 @@ const scenes = {
 
 이제 다음 코스는?`,
     choices: [
-      { text: "☕ 카페 가기", next: "cafe", like: 10 },
+      { text: "☕ 느좋 카페 가기", next: "cafe", like: 10 },
       { text: "📸 사진 찍기", next: "photo", like: 15 }
     ]
   },
@@ -162,21 +163,21 @@ const scenes = {
 
 준희의 선택은?`,
     choices: [
-      { text: "🍰 먹고 싶은 거 다 고르라고 한다", next: "photo", like: 20 },
-      { text: "🛌 집 가서 쉬자고 한다", next: "restEnd", like: -20 },
+      { text: "🍰 먹고 싶은 거 다 골라!!", next: "photo", like: 20 },
+      { text: "🛌 살쪘는데 괜찮아?", next: "restEnd", like: -30 },
       { text: "💸 배부르니까 안 먹어도 되지?", next: "bad", like: -30 }
     ]
   },
 
   photo: {
-    title: "사진 이벤트",
+    title: "사진 찍기",
     text: `예은:
 "사진 찍자!"
 
 준희는 어떻게 반응할까?`,
     choices: [
       { text: "📸 바로 포즈 잡기", next: "finalCheck", like: 20 },
-      { text: "😐 아 사진은 좀...", next: "normal", like: -10 },
+      { text: "😐 아 오늘 얼굴 별로..", next: "normal", like: -10 },
       { text: "👻 난 영혼을 사진에 뺏겨", next: "soulEnd", like: -5 }
     ]
   },
@@ -239,7 +240,7 @@ SYSTEM:
 
   trueEnd: {
     title: "TRUE END",
-    text: `게임 클리어!
+    text: `주니야!! 너는 최고의남자친구야!!
 
 호감도: 100/100
 
@@ -247,7 +248,7 @@ SYSTEM:
 🏆 최고의 남자친구
 🏆 연락 잘하는 사람
 🏆 메뉴 결정왕
-🏆 예은이 행복 전문가
+🏆 예은이 잘 놀아주기
 
 그리고...`,
     choices: [
@@ -303,7 +304,7 @@ SYSTEM:
     title: "LEGENDARY BAD END",
     text: `그의 마지막 기록
 
-패스 성공률: 87%
+패스 성공률: 99%
 연애 성공률: 0%
 
 축구는 남았지만
