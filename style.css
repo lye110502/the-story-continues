@@ -120,35 +120,33 @@ button:hover {
 @media (max-width: 768px) {
 
     .game {
-        width: 98%;
-        max-width: none;
+        width: 95%;
     }
 
     .screen {
-        padding: 35px 25px;
+        padding: 25px 18px;
     }
 
     #scene-image {
-        max-height: 500px;
+        max-height: 280px;
     }
 
     h1 {
-        font-size: 40px;
+        font-size: 28px;
     }
 
     p {
-        font-size: 24px;
-        line-height: 1.8;
+        font-size: 18px;
+        line-height: 1.7;
     }
 
     button {
-        padding: 22px;
-        font-size: 22px;
-        border-radius: 20px;
+        padding: 16px;
+        font-size: 17px;
     }
 
     .top-bar {
-        padding: 18px 22px;
-        font-size: 22px;
+        padding: 14px 18px;
+        font-size: 16px;
     }
 }
