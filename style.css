@@ -13,11 +13,15 @@ body {
 }
 
 .game {
-  width: 92%;
-  max-width: 520px;
+  width: 96%;
+  max-width: 700px;
+
   background: white;
-  border-radius: 24px;
+
+  border-radius: 30px;
+
   box-shadow: 0 15px 40px rgba(0,0,0,0.18);
+
   overflow: hidden;
 }
 
@@ -98,10 +102,53 @@ button:hover {
 
 #scene-image {
     width: 100%;
-    height: 240px;
-    object-fit: cover;
+    max-height: 450px;
+    height: auto;
+
+    object-fit: contain;
+
     border-radius: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    margin-bottom: 25px;
+
     display: none;
+
+    background: white;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+@media (max-width: 768px) {
+
+    .game {
+        width: 98%;
+        max-width: none;
+    }
+
+    .screen {
+        padding: 35px 25px;
+    }
+
+    #scene-image {
+        max-height: 500px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 24px;
+        line-height: 1.8;
+    }
+
+    button {
+        padding: 22px;
+        font-size: 22px;
+        border-radius: 20px;
+    }
+
+    .top-bar {
+        padding: 18px 22px;
+        font-size: 22px;
+    }
 }
