@@ -4,6 +4,7 @@ const title = document.getElementById("title");
 const text = document.getElementById("text");
 const choices = document.getElementById("choices");
 const score = document.getElementById("score");
+const sceneImage = document.getElementById("scene-image");
 
 function updateScore() {
   if (like > 100) like = 100;
@@ -16,6 +17,14 @@ function showScene(scene) {
   text.textContent = scene.text;
   choices.innerHTML = "";
 
+  if (scene.image) {
+    sceneImage.src = scene.image;
+    sceneImage.style.display = "block";
+}
+else {
+    sceneImage.style.display = "none";
+}
+  
   scene.choices.forEach(choice => {
     const btn = document.createElement("button");
 
@@ -43,6 +52,7 @@ function showScene(scene) {
 const scenes = {
   start: {
     title: "이준희의 선택",
+    image: "images/start.jpg",
     text: `2026년 어느 날.
 
 오늘은 날씨가 아~~주 좋은 날이다.
@@ -56,6 +66,7 @@ const scenes = {
 
   soccer: {
     title: "축구장 엔딩?",
+    image: "images/soccer.jpg",
     text: `준희는 축구장으로 향했다.
 
 공은 잘 차고 있는데...
@@ -114,6 +125,7 @@ const scenes = {
 
   date: {
     title: "데이트 시작",
+    image: "images/date.jpg",
     text: `준희는 예은이를 만나러 갔다.
 
 예은이는 이미 배가 고파 보인다.
@@ -129,6 +141,7 @@ const scenes = {
 
   food: {
     title: "메뉴 선택",
+    image: "images/food.jpg",
     text: `예은:
 "뭐 먹으까?"
 
@@ -157,6 +170,7 @@ const scenes = {
 
   cafe: {
     title: "카페 데이트",
+      image: "images/cafe.jpg",
     text: `둘은 카페에 도착했다.
 
 예은이가 디저트를 보고 있다.
@@ -171,6 +185,7 @@ const scenes = {
 
   photo: {
     title: "사진 찍기",
+    image: "images/photo.jpg",
     text: `예은:
 "사진 찍자!"
 
@@ -184,6 +199,7 @@ const scenes = {
 
   soulEnd: {
     title: "SECRET BAD END",
+    image: "images/soul.jpg",
     text: `예은:
 "사진 찍자!"
 
@@ -209,6 +225,7 @@ SYSTEM:
 
   restEnd: {
     title: "HIDDEN END",
+    image: "images/rest.jpg",
     text: `준희:
 "집 가서 쉬자."
 
@@ -240,6 +257,7 @@ SYSTEM:
 
   trueEnd: {
     title: "TRUE END",
+    image: "images/true.jpg",
     text: `주니야!! 너는 최고의남자친구야!!
 
 호감도: 100/100
