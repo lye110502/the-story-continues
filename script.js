@@ -143,15 +143,14 @@ const scenes = {
     title: "메뉴 선택",
     image: "images/KakaoTalk_20260630_220543928_03.jpg",
     text: `예은:
-"뭐 먹으까?"
+"우리 뭐 먹으까?"
 
 이 질문은 쉬워 보이지만
 신중하게 골라야할 것 같다!!`,
     choices: [
       { text: "🍕 피자", next: "goodFood", like: 15 },
       { text: "🍜 샤브샤브", next: "goodFood", like: 20 },
-      { text: "🍜 쿠우쿠우", next: "goodFood", like: 20 },
-      { text: "🤷 아무거나", next: "bad", like: -50 }
+      { text: "🤷 아무거나 너 먹고싶은거", next: "bad", like: -50 }
     ]
   },
 
@@ -258,13 +257,12 @@ SYSTEM:
   trueEnd: {
     title: "TRUE END",
     image: "images/KakaoTalk_20260630_220543928_08.jpg",
-    text: `주니야!! 너는 최고의남자친구야!!
+    text: `주니야!! 너는 최고의 남자친구야!!
 
 호감도: 100/100
 
 획득 업적:
 🏆 최고의 남자친구
-🏆 연락 잘하는 사람
 🏆 메뉴 결정왕
 🏆 예은이 잘 놀아주기
 
@@ -276,15 +274,13 @@ SYSTEM:
 
   continue: {
     title: "현실 세계에서 계속",
-    text: `현재 진행 중인 게임:
+    text: `현실에서 이어서 하는 법:
 
-이준희 ♥ 이예은
+공주님에게 카톡 보내기
 
-진행률:
-아직 끝나지 않음
 
-다음 챕터:
-우리의 다음 데이트`,
+
+우리의 다음 데이트는?`,
     choices: [
       { text: "처음부터 다시 하기", next: "start" }
     ]
