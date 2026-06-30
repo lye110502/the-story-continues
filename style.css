@@ -5,7 +5,7 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background: linear-gradient(135deg, #ffd6e8, #d6ecff);
+  background: linear-gradient(135deg, #fff9d6, #fff2b8);
   font-family: "Pretendard", "Apple SD Gothic Neo", sans-serif;
   display: flex;
   justify-content: center;
@@ -22,7 +22,7 @@ body {
 }
 
 .top-bar {
-  background: #ff6fae;
+  background: #7cc7ff;
   color: white;
   padding: 14px 18px;
   display: flex;
@@ -39,7 +39,7 @@ body {
 }
 
 h1 {
-  color: #ff4f9a;
+  color: #4d8dff;
   font-size: 28px;
   margin-bottom: 24px;
   text-align: center;
