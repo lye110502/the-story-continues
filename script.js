@@ -52,7 +52,7 @@ else {
 const scenes = {
   start: {
     title: "이준희의 선택",
-     image: "KakaoTalk_20260630_220543928.jpg",
+     image: "images/KakaoTalk_20260630_220543928.jpg",
     text: `2026년 어느 날.
 
 오늘은 날씨가 아~~주 좋은 날이다.
@@ -66,7 +66,7 @@ const scenes = {
 
   soccer: {
     title: "축구장 엔딩?",
-    image: "KakaoTalk_20260630_220543928_01.jpg",
+    image: "images/KakaoTalk_20260630_220543928_01.jpg",
     text: `준희는 축구장으로 향했다.
 
 공은 잘 차고 있는데...
@@ -125,7 +125,7 @@ const scenes = {
 
   date: {
     title: "데이트 시작",
-    image: "KakaoTalk_20260630_220543928_02.jpg",
+    image: "images/KakaoTalk_20260630_220543928_02.jpg",
     text: `준희는 예은이를 만나러 갔다.
 
 예은이는 이미 배가 고파 보인다.
@@ -141,7 +141,7 @@ const scenes = {
 
   food: {
     title: "메뉴 선택",
-    image: "KakaoTalk_20260630_220543928_03.jpg",
+    image: "images/KakaoTalk_20260630_220543928_03.jpg",
     text: `예은:
 "뭐 먹으까?"
 
@@ -170,7 +170,7 @@ const scenes = {
 
   cafe: {
     title: "카페 데이트",
-      image: "KakaoTalk_20260630_220543928_08.jpg",
+      image: "images/KakaoTalk_20260630_220543928_04.jpg",
     text: `둘은 카페에 도착했다.
 
 예은이가 디저트를 보고 있다.
@@ -185,7 +185,7 @@ const scenes = {
 
   photo: {
     title: "사진 찍기",
-     image: "KakaoTalk_20260630_220543928_04.jpg",
+     image: "images/KakaoTalk_20260630_220543928_05.jpg",
     text: `예은:
 "사진 찍자!"
 
@@ -199,7 +199,7 @@ const scenes = {
 
   soulEnd: {
     title: "SECRET BAD END",
-    image: "KakaoTalk_20260630_220543928_05.jpg",
+    image: "images/KakaoTalk_20260630_220543928_06.jpg",
     text: `예은:
 "사진 찍자!"
 
@@ -225,7 +225,7 @@ SYSTEM:
 
   restEnd: {
     title: "HIDDEN END",
-    image: "KakaoTalk_20260630_220543928_06.jpg",
+    image: "images/KakaoTalk_20260630_220543928_07.jpg",
     text: `준희:
 "집 가서 쉬자."
 
@@ -257,7 +257,7 @@ SYSTEM:
 
   trueEnd: {
     title: "TRUE END",
-    image: "KakaoTalk_20260630_220543928_07.jpg",
+    image: "images/KakaoTalk_20260630_220543928_08.jpg",
     text: `주니야!! 너는 최고의남자친구야!!
 
 호감도: 100/100
