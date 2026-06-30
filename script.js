@@ -18,12 +18,24 @@ function showScene(scene) {
 
   scene.choices.forEach(choice => {
     const btn = document.createElement("button");
-    btn.textContent = choice.text;
+
+    if (choice.img) {
+      const img = document.createElement("img");
+      img.src = choice.img;
+      img.className = "choice-img";
+      btn.appendChild(img);
+    }
+
+    const span = document.createElement("span");
+    span.textContent = choice.text;
+    btn.appendChild(span);
+
     btn.onclick = () => {
       like += choice.like || 0;
       updateScore();
       showScene(scenes[choice.next]);
     };
+
     choices.appendChild(btn);
   });
 }
