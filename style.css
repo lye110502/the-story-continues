@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffd6e8, #d6ecff);
+  font-family: "Pretendard", "Apple SD Gothic Neo", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  width: 92%;
+  max-width: 520px;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.18);
+  overflow: hidden;
+}
+
+.top-bar {
+  background: #ff6fae;
+  color: white;
+  padding: 14px 18px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.screen {
+  padding: 32px 24px;
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  color: #ff4f9a;
+  font-size: 28px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+p {
+  white-space: pre-line;
+  line-height: 1.7;
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+}
+
+button {
+  width: 100%;
+  border: none;
+  border-radius: 16px;
+  padding: 15px;
+  margin-top: 12px;
+  background: #ffe0ef;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #ff9ccc;
+  color: white;
+  transform: scale(1.03);
+}
+
+.ending {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff4f9a;
+}
+
+.hidden {
+  display: none;
+}
