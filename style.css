@@ -118,35 +118,50 @@ button:hover {
 }
 
 @media (max-width: 768px) {
+  body {
+    align-items: flex-start;
+    padding: 12px 0;
+  }
 
-    .game {
-        width: 95%;
-    }
+  .game {
+    width: 90%;
+    max-width: 420px;
+    border-radius: 22px;
+  }
 
-    .screen {
-        padding: 25px 18px;
-    }
+  .top-bar {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
 
-    #scene-image {
-        max-height: 280px;
-    }
+  .screen {
+    padding: 18px 16px;
+    min-height: auto;
+  }
 
-    h1 {
-        font-size: 28px;
-    }
+  #scene-image {
+    width: 100%;
+    max-height: 190px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 16px;
+    margin-bottom: 14px;
+  }
 
-    p {
-        font-size: 18px;
-        line-height: 1.7;
-    }
+  h1 {
+    font-size: 24px;
+    margin-bottom: 14px;
+  }
 
-    button {
-        padding: 16px;
-        font-size: 17px;
-    }
+  p {
+    font-size: 16px;
+    line-height: 1.55;
+  }
 
-    .top-bar {
-        padding: 14px 18px;
-        font-size: 16px;
-    }
+  button {
+    padding: 12px 14px;
+    font-size: 15px;
+    margin-top: 9px;
+    border-radius: 15px;
+  }
 }
